@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0ECB9F59-5685-440B-AFC3-4FC8404061FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_book.Designer.cs">
+      <DependentUpon>Issue_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libray_systemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Libray_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Libray_systemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Libray_systemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Return_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return_book.Designer.cs">
+      <DependentUpon>Return_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stdentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stdentry.Designer.cs">
+      <DependentUpon>stdentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewB.Designer.cs">
+      <DependentUpon>viewB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_S.Designer.cs">
+      <DependentUpon>view_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Books.Designer.cs">
+      <DependentUpon>View_Books.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_book.resx">
+      <DependentUpon>Issue_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Return_book.resx">
+      <DependentUpon>Return_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stdentry.resx">
+      <DependentUpon>stdentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewB.resx">
+      <DependentUpon>viewB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_S.resx">
+      <DependentUpon>view_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Books.resx">
+      <DependentUpon>View_Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Libray_systemDataSet.xsc">
+      <DependentUpon>Libray_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Libray_systemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Libray_systemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Libray_systemDataSet.xss">
+      <DependentUpon>Libray_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Libray_systemDataSet1.xsc">
+      <DependentUpon>Libray_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Libray_systemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Libray_systemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Libray_systemDataSet1.xss">
+      <DependentUpon>Libray_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="picture\c# icon\book entry.png" />
+    <Content Include="picture\c# icon\Custom-Icon-Design-Pretty-Office-8-User-blue.ico" />
+    <Content Include="picture\c# icon\download.jpg" />
+    <Content Include="picture\c# icon\download.png" />
+    <Content Include="picture\c# icon\help.jpg" />
+    <Content Include="picture\c# icon\images.jpg" />
+    <Content Include="picture\c# icon\issue.jpg" />
+    <Content Include="picture\c# icon\Library-18.jpg" />
+    <Content Include="picture\c# icon\Password.jpg" />
+    <Content Include="picture\c# icon\username.ico" />
+    <Content Include="picture\c# icon\usser.png" />
+    <Content Include="picture\download.jpg" />
+    <Content Include="picture\download.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
