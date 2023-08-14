@@ -1,0 +1,37 @@
+int main( )
+{
+// jkjfnbvjksjsnvbkdn  njkdnbjkn  
+int d[ 5  ] ,*pm ,a,1a,* a1,b,  /* 
+
+  comment, new line, array, pointer
+  */
+   c=0,if;
+   a1 = &a; 
+   10;
+   b = 20;
+   c = a1 + b;
+   
+   if c==30 )
+   {
+      a1=12;
+   }
+   while  c==30 )
+   {
+      a1=12;
+   }
+for (
+ b >=1; b--)
+   {
+      a=5;
+   }
+for 
+ b >=1; b--)
+   {
+      a=5;
+   }
+   return 
+0;
+}
+(
+}
+
