@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1567245323 source:f:\all programms\ai\missionary_debuging\main.cpp
+	<iostream>
+	<iomanip>
+

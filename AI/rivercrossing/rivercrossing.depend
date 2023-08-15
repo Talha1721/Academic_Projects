@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1567252512 source:f:\all programms\ai\rivercrossing\main.cpp
+	<iostream>
+	<conio.h>
+	<iomanip>
+
