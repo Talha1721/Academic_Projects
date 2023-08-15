@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1531323324 source:h:\algorithm codes\back to high school physics\main.c
+	<stdio.h>
+	<stdlib.h>
+
